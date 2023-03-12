@@ -1,0 +1,45 @@
+{
+    "name": "jsrsasign-addon-qc",
+    "version": "0.9.1",
+    "description": "jsrsasign add-on for qcStatements extensions and OIDs for qualified certificate",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kjur/jsrsasign-addon-qc.git"
+    },
+    "keywords": [
+        "jsrsasign",
+	"eidas",
+	"qualified",
+	"certificate",
+	"rfc3739",
+	"etsi-en-319412-5",
+        "oid"
+    ],
+    "author": "Kenji Urushima",
+    "homepage": "https://github.com/kjur/jsrsasign-addon-qc/",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/kjur/jsrsasign-addon-qc/issues"
+    },
+    "dependencies": {
+        "jsrsasign": ">=10.7.0"
+    },
+    "devDependencies": {
+        "mocha": "*"
+    },
+    "funding": "https://github.com/kjur/jsrsasign#donations",
+    "badges": {
+        "list": [
+            "githubsponsors",
+            "crypto"
+        ],
+        "config": {
+            "githubSponsorsUsername": "kjur",
+            "cryptoURL": "https://github.com/kjur/jsrsasign#cryptocurrency"
+        }
+    }
+}
