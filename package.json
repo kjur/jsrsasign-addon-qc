@@ -1,6 +1,6 @@
 {
     "name": "jsrsasign-addon-qc",
-    "version": "0.9.1",
+    "version": "0.9.2",
     "description": "jsrsasign add-on for qcStatements extensions and OIDs for qualified certificate",
     "main": "index.js",
     "scripts": {
