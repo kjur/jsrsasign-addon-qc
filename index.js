@@ -1,5 +1,5 @@
-const VERSION = "0.9.3";
-const VERSION_FULL = "jsrsasign-addon-qc 0.9.3 (c) Kenji Urushima github.com/kjur/jsrsasign-addon-qc";
+const VERSION = "0.9.4";
+const VERSION_FULL = "jsrsasign-addon-qc 0.9.4 (c) Kenji Urushima github.com/kjur/jsrsasign-addon-qc";
 
 const OIDs = {
     // RFC 3739 QC
@@ -17,11 +17,11 @@ let _KJUR = null;
 let _X509 = null;
 let _ASN1HEX = null;
 
-function registerAddonForModule(jsrsasign) {
-    registerAddon(jsrsasign.KJUR, jsrsasign.X509, jsrsasign.ASN1HEX);
+function register(jsrsasign) {
+    registerParts(jsrsasign.KJUR, jsrsasign.X509, jsrsasign.ASN1HEX);
 }
 
-function registerAddon(argKJUR, argX509, argASN1HEX) {
+function registerParts(argKJUR, argX509, argASN1HEX) {
     _KJUR = argKJUR;
     _X509 = argX509;
     _ASN1HEX = argASN1HEX;
@@ -58,5 +58,5 @@ function extParserQc(oid, critical, hExtV) {
 exports.VERSION = VERSION;
 exports.VERSION_FULL = VERSION_FULL;
 exports.OIDs = OIDs;
-exports.registerAddonForModule = registerAddonForModule;
-exports.registerAddon = registerAddon;
+exports.register = register;
+exports.registerParts = registerParts;
